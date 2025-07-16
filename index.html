@@ -11,25 +11,24 @@
 </head>
 
 <style>
-        .site-logo {
-            max-width: 50px;
-            width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-            padding: 8px;
-            background-color: #fff8f0;
-            text-align: center;
-        }
-    </style>
+    .site-logo {
+        max-width: 50px;
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        padding: 8px;
+        background-color: #fff8f0;
+        text-align: center;
+    }
+</style>
 
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="container">
             <div class="logo">
-                <!-- <i class="fas fa-utensils"></i> -->
-                 <img src="https://i.pinimg.com/736x/81/8d/f1/818df10f7a2fa98b1705ae343802cd18.jpg" alt="Foodie Hub Logo" class="site-logo">
+                <img src="https://i.pinimg.com/736x/81/8d/f1/818df10f7a2fa98b1705ae343802cd18.jpg" alt="Foodie Hub Logo" class="site-logo">
                 <span><span style="color:#e63946;">Foodie</span> Hub</span>
             </div>
             <ul class="nav-links">
@@ -61,7 +60,32 @@
             <h2 class="section-title">Our Food Service Sectors</h2>
             <p class="section-subtitle">Click to explore each culinary domain</p>
             
-            <div class="sectors-grid" id="sectorsGrid"></div>
+            <!-- Organized by Sections -->
+            <div class="sector-sections">
+                <!-- Dining Experiences Section -->
+                <div class="sector-section">
+                    <h3 class="section-heading">Dining Experiences</h3>
+                    <div class="sector-buttons" id="dining-experiences"></div>
+                </div>
+
+                <!-- Quick Service Section -->
+                <div class="sector-section">
+                    <h3 class="section-heading">Quick Service</h3>
+                    <div class="sector-buttons" id="quick-service"></div>
+                </div>
+
+                <!-- Delivery & Logistics Section -->
+                <div class="sector-section">
+                    <h3 class="section-heading">Delivery & Logistics</h3>
+                    <div class="sector-buttons" id="delivery-logistics"></div>
+                </div>
+
+                <!-- Specialty Services Section -->
+                <div class="sector-section">
+                    <h3 class="section-heading">Specialty Services</h3>
+                    <div class="sector-buttons" id="specialty-services"></div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -92,7 +116,7 @@
             <div class="footer-content">
                 <div class="footer-logo">
                     <i class="fas fa-utensils"></i>
-                    <span>Gourmet Horizon</span>
+                    <span>Foodie Hub</span>
                 </div>
                 <div class="footer-links">
                     <h3>Quick Links</h3>
@@ -113,7 +137,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Gourmet Horizon. All rights reserved.</p>
+                <p>&copy; 2025 Foodie Hub. All rights reserved.</p>
             </div>
         </div>
     </footer>
