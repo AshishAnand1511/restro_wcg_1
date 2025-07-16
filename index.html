@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie Hub</title>
+    <link rel="shortcut icon" href="https://i.pinimg.com/736x/81/8d/f1/818df10f7a2fa98b1705ae343802cd18.jpg" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+        .site-logo {
+            max-width: 50px;
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            padding: 8px;
+            background-color: #fff8f0;
+            text-align: center;
+        }
+    </style>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <!-- <i class="fas fa-utensils"></i> -->
+                 <img src="https://i.pinimg.com/736x/81/8d/f1/818df10f7a2fa98b1705ae343802cd18.jpg" alt="Foodie Hub Logo" class="site-logo">
+                <span><span style="color:#e63946;">Foodie</span> Hub</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sectors">Sectors</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Discover Culinary Excellence</h1>
+                <p>Explore the finest food service sectors curated for connoisseurs and enthusiasts alike</p>
+                <a href="#sectors" class="btn">Explore Sectors</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sectors Section -->
+    <section class="sectors" id="sectors">
+        <div class="container">
+            <h2 class="section-title">Our Food Service Sectors</h2>
+            <p class="section-subtitle">Click to explore each culinary domain</p>
+            
+            <div class="sectors-grid" id="sectorsGrid"></div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-form">
+                <h2>Get In Touch</h2>
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-utensils"></i>
+                    <span>Gourmet Horizon</span>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#sectors">Sectors</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Gourmet Horizon. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sector Modal -->
+    <div class="modal" id="sectorModal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModal">&times;</span>
+            <img id="modalImage" src="" alt="Sector Image">
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
